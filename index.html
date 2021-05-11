@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Estudiantes</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['table'] });
+        google.charts.setOnLoadCallback(drawTable);
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container-fluid" style="background-color: antiquewhite;">
+
+        <!--ENCABEZADO PAGINA-->
+        <header>
+            <div class="row">
+                <div class="col">
+
+                </div>
+                <!--TITULO DE LA MATERIA-->
+                <div id="titulo" class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+        </header>
+
+
+        <!--CONTENIDO PRINCIPAL-->
+        <main>
+
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+
+                </div>
+                <div class="col"></div>
+            </div>
+
+
+            <!--ESTUDIANTES-->
+            <div class="row">
+                <div id="estudiantes" class="col">
+                    <h2>Estudiantes</h2>
+                </div>
+                <div class="col">
+
+                </div>
+                <div class="col">
+
+                </div>
+            </div>
+
+            <!--TABLA PRINCIPAL-->
+            <div id="table_div">
+
+            </div>
+
+            <br>
+
+            <div class="row">
+                <div class="col"></div>
+                <div class="col">
+                    <div id="descripcion"></div>
+                </div>
+                <div class="col"></div>
+            </div>
+            <br>
+        </main>
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+    <!-- <script type="text/javascript">
+        google.charts.load('current', {'packages':['table']});
+        google.charts.setOnLoadCallback(drawTable);
+
+        function drawTable() {
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Name');
+          data.addColumn('number', 'Salary');
+          data.addColumn("number", "nota");
+
+          let v = [['Mike',  1000, 2.5],['Jim',   1000, 3.3],['Alice', 2000, 2.2],['Bob',   2500, 3.2]];
+          //data.addColumn('boolean', 'Full Time Employee');
+          data.addRows(v);
+
+          var table = new google.visualization.Table(document.getElementById('tablita'));
+
+          table.draw(data, {showRowNumber: true, width: '100%', height: '100%'});
+        }
+      </script> -->
+
+    <div class="container-fluid">
+
+        <footer style="background-color:cornflowerblue">
+            <div class="row">
+                <div class="col-10">
+                    <p style="position: relative; top: 22px"><b>Desarrollado por:</b> Brayan Roa <b>Código: </b>
+                        1151866, Felipe Mora <b>Código</b> 1151863</p>
+                </div>
+
+                <div class="col-2">
+                    <a href="https://ww2.ufps.edu.co/oferta-academica/ingenieria-de-sistemas"><img
+                            src="imagenes/logo_sistemas.jpg" alt=""
+                            style="width: 80px; position: relative; border-radius: 50px;"></a>
+                </div>
+
+            </div>
+
+
+        </footer>
+    </div>
+
+    <script src="js/proceso.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
